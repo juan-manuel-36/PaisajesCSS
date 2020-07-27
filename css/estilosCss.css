@@ -1,0 +1,233 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+font-family: 'dancingScript';
+src: url('../fonts/DancingScript-bold.otf');
+}
+
+img{
+box-shadow: 2px 2px #02010a;
+}
+#titulo h1{
+  color: white;
+  text-shadow: 2px 2px #02010a;
+}
+body{
+	background:  #02010a;
+		font-family:dancingScript;
+}
+.texto {
+text-align: center;
+}
+
+
+
+@keyframes animacionTraslado {
+  0% {
+    margin-top: 150%;
+
+	}
+	50% {
+    margin-top: -5%;
+    	}
+	100% {
+    margin-top: 0%;
+	}
+}
+#contenido {
+  animation-name: animacionTraslado;
+  animation-duration: 2s;
+
+
+}
+@media screen and (max-width: 899px){
+	#contenido{
+		width: 100%;
+	}
+	#cabecera {
+    width: 100%;
+    background:#5b7989;
+    border-radius: 10px 10px 0px 0px;
+		display: flex;
+		flex-direction: column;
+
+    }
+   #titulo {
+margin-left: auto;
+margin-right: auto;
+
+
+  }
+  #cabecera #menu{
+		margin-left: auto;
+		margin-right: auto;
+  }
+    /*margin-left: 60%;
+    margin-top: 3%;*/
+    #menu a{
+      padding-left: 10px;
+      text-decoration: none;
+    }
+
+	#central{
+width: 100%;
+height: auto;
+background: #82c3a6;
+padding-top: 30px;
+padding-bottom: 30px;
+
+	}
+	#central img{
+		width: 90%;
+	height: auto;
+
+display: block;
+margin-left: auto;
+margin-right: auto;
+	}
+
+	.secundarias{
+		background-color:#d5c75f;
+		display: flex;
+		flex-flow:column;
+
+		}
+		.secundarias img{
+			width: 70%;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+
+		.myFooter{
+				width: 100%;
+					display: flex;
+				flex-flow: column;
+				justify-content: flex-start;
+				font-size: 0.6em;
+
+
+			}
+			#datosPersonales,#contacto,#politicas,#redesSociales{
+				margin-left: 20%;
+			}
+
+}
+@media screen and (min-width:900px){
+
+	#contenido{
+		width: 900px;
+		margin: 0 auto;
+
+
+	}
+	#cabecera {
+    width: 100%;
+    background:#5b7989;
+    border-radius: 10px 10px 0px 0px;
+    /*display: flex;
+    flex-direction: row;*/
+    }
+  #cabecera #titulo{
+
+    margin-left: 20px;
+  }
+  #cabecera #menu{
+
+    margin-left: 50%;
+    margin-top: 3%;
+  }
+    /*margin-left: 60%;
+    margin-top: 3%;*/
+    #menu li{
+      margin-left: 15px;
+      text-decoration: none;
+      display: inline;
+
+    }
+    #titulo h1{
+    display: block;
+    padding-top:40px;
+    }
+    #menu ul{
+      margin-left: 50%;
+    }
+	#central{
+	width: 100%;
+	margin: 0 auto;
+	background: #82c3a6;
+	padding: 10px 0;
+
+	}
+	.secundarias {
+		width: 100%;
+		background-color:#d5c75f;
+		padding: 10px 0;
+		margin: 0 auto;
+		display: flex;
+		flex-flow: row ;
+		justify-content: center;
+	}
+
+
+	#central img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		/*width: 50%;
+		height: 100%;
+*/
+	}
+	.myFooter{
+			width: 100%;
+			margin: 0 auto;
+			display: flex;
+			flex-flow: row;
+			justify-content: center;
+			font-size: 0.6em;
+			align-items: center;
+
+		}
+
+}
+
+.secundarias #imagenIzquierda:hover{
+transform:rotate(10deg);
+
+}
+.secundarias #imagenDerecha:hover{
+transform: translate(20px,-5px);
+}
+.secundarias #imagenIzquierda{
+	border: 2px solid;
+	box-shadow: 10px 10px #82c3a6;
+	transition:transform 0.5s
+}
+.secundarias #imagenDerecha{
+	border: 2px solid;
+	box-shadow: 10px 10px #82c3a6;
+transition:transform 0.5s;
+}
+.myFooter #datosPersonales{
+	text-align: center;
+}
+.myFooter #contacto,#politicas,#redesSociales,#datosPersonales {
+
+	margin-right: 5%;
+
+}
+#redesSociales a{
+	padding-right: 10px;
+}
+#politicas p{
+	padding-bottom: 10px;
+}
+#datosPersonales{
+	padding-right: 30px;
+}
+
+.myFooter{
+	background:  #C6d5c5;
+	border-radius:0px 0px 10px 10px;
+}
